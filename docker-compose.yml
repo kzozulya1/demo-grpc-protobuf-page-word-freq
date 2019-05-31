@@ -1,0 +1,22 @@
+version: '3'
+services:
+    #GOLANG gRPC Service
+    golang-grpc-service:
+        build: 
+            context: ./golang-grpc-service
+            dockerfile: DockerfileDEV
+
+        volumes:
+          - ./golang-grpc-service/src:/go/src/app
+
+        working_dir: /go/src/app
+
+        environment:
+            #Need for /go/src/app/cli/client.go
+            GRPC_SERVICE_ADDRESS: "golang-grpc-service:500"
+            
+            SERVICE_PORT: ":500"
+
+        container_name: golang-grpc-service
+        entrypoint: /usr/local/go/bin/go run server.go
+   

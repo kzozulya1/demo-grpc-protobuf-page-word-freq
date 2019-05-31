@@ -1,0 +1,20 @@
+[
+    {
+    "page_url": "https://www.nature.com/",
+    "page_title": "Global Nature",
+    "words":[
+        {"value":"wild","count":213},
+        {"value":"bear","count":10},
+        {"value":"duck","count":32}
+        ]
+    },
+    {
+        "page_url": "https://en.wikipedia.org/wiki/Politics",
+        "page_title": "Politics",
+        "words":[
+            {"value":"promoting","count":4},
+            {"value":"society","count":101},
+            {"value":"century","count":22}
+        ]
+    }
+]
